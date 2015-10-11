@@ -23,6 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
            let vc =  storyboard.instantiateViewControllerWithIdentifier("TweetsViewController")
             window?.rootViewController = vc
         }
+
+
+
+
+
+
+
+
         return true
     }
 
