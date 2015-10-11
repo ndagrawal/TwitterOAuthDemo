@@ -12,10 +12,23 @@ class TweetDetailViewController: UIViewController,UINavigationBarDelegate {
 
     var tweet:Tweet?
 
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var displayName: UILabel!
+    @IBOutlet weak var profileName: UILabel!
+    @IBOutlet weak var tweetText: UILabel!
+    @IBOutlet weak var tweetCreatedAt: UILabel!
+    @IBOutlet weak var favoritesCount: UILabel!
+    @IBOutlet weak var ReTweetsCount: UILabel!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavigationController()
-        // Do any additional setup after loading the view.
+        profileImage.setImageWithURL(NSURL(string: (tweet?.user?.profileImageURL)!))
+        displayName.text = tweet?.user?.name
+        profileName.text = tweet?.user?.screenname
+        tweetText.text = tweet?.text
+        tweetCreatedAt.text = tweet?.createdAtString
     }
 
     override func didReceiveMemoryWarning() {

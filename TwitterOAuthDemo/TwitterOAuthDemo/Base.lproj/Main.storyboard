@@ -188,7 +188,7 @@
                                             <outlet property="profileImage" destination="dYg-T8-P5P" id="juw-O4-20j"/>
                                             <outlet property="profileName" destination="Rpk-jy-uRn" id="DjY-cA-tKd"/>
                                             <outlet property="tweetText" destination="Yd3-Ck-EeU" id="0Ko-53-kR2"/>
-                                            <segue destination="vf7-Xi-6Qx" kind="presentation" id="HIU-zk-dty"/>
+                                            <segue destination="vf7-Xi-6Qx" kind="presentation" identifier="TweetDetailSegue" id="HIU-zk-dty"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -285,8 +285,8 @@
                                     <constraint firstAttribute="height" constant="1" id="vI2-K1-CYI"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSP-NQ-rWM">
-                                <rect key="frame" x="490" y="261" width="70" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSP-NQ-rWM">
+                                <rect key="frame" x="490" y="259" width="70" height="21"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="sQ3-KX-DHm"/>
@@ -380,6 +380,15 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Oh6-ya-Wfk"/>
+                    <connections>
+                        <outlet property="ReTweetsCount" destination="2B9-JS-OGo" id="qn1-Sa-87X"/>
+                        <outlet property="displayName" destination="ZjH-vm-Idg" id="YC0-Rk-vIC"/>
+                        <outlet property="favoritesCount" destination="jSP-NQ-rWM" id="uPg-v4-9fM"/>
+                        <outlet property="profileImage" destination="oaI-nR-rny" id="7ow-ZD-p1V"/>
+                        <outlet property="profileName" destination="bvx-C1-fQF" id="SQm-4f-1kl"/>
+                        <outlet property="tweetCreatedAt" destination="Aqe-wO-VA3" id="tk2-cv-gcY"/>
+                        <outlet property="tweetText" destination="6Up-75-Vh4" id="MLp-CO-m3I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EqT-9B-2Ob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
