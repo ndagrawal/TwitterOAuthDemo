@@ -14,7 +14,6 @@ Time Spent 13 Hours
 
 
 
----   
+
 I tried to use the API more after the homework -- but somehow i am not receiving response -- this can be because of rate limit .
---- 
 If you find difficult to run the project please let me know. I can change the API Key and try it again.
